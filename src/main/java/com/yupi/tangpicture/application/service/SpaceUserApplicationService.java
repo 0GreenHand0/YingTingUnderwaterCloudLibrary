@@ -1,0 +1,50 @@
+package com.yupi.tangpicture.application.service;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.yupi.tangpicture.interfaces.dto.spaceuser.SpaceUserAddRequest;
+import com.yupi.tangpicture.interfaces.dto.spaceuser.SpaceUserQueryRequest;
+import com.yupi.tangpicture.domain.space.entity.SpaceUser;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.yupi.tangpicture.interfaces.vo.space.SpaceUserVO;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+
+/**
+* @author dell
+* @description 针对表【space_user(空间用户关联)】的数据库操作Service
+* @createDate 2025-04-21 20:40:04
+*/
+public interface SpaceUserApplicationService extends IService<SpaceUser> {
+    /**
+     * 创建空间
+     */
+    long addSpaceUser(SpaceUserAddRequest spaceAddRequest);
+    /**
+     * 校验空间数据的办法
+     * @param spaceUser
+     * @param add
+     */
+    void validSpaceUser(SpaceUser spaceUser, boolean add);
+    /**
+     * 获取查询对象
+     * @param spaceUserQueryRequest
+     * @return
+     */
+    QueryWrapper<SpaceUser> getQueryWrapper(SpaceUserQueryRequest spaceUserQueryRequest);
+
+    /**
+     * 获取包装类
+     * @param spaceUser
+     * @param request
+     * @return
+     */
+    SpaceUserVO getSpaceUserVO(SpaceUser spaceUser, HttpServletRequest request);
+
+    /**
+     * 获取包装类（分页）
+     * @return
+     */
+    List<SpaceUserVO> getSpaceUserVOList(List<SpaceUser> spaceUserList);
+
+}

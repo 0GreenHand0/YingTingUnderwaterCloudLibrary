@@ -155,7 +155,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.yupi.tangpicturebacken.TangPictureBackenApplication</mainClass>
+                    <mainClass>com.yupi.tangpicture.TangPictureBackenApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
