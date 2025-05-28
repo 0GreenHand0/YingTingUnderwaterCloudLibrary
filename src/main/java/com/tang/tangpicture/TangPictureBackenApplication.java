@@ -1,4 +1,4 @@
-package com.yupi.tangpicture;
+package com.tang.tangpicture;
 
 import org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration;
 import org.mybatis.spring.annotation.MapperScan;
@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication(exclude = {ShardingSphereAutoConfiguration.class})
 @EnableAsync
-@MapperScan("com.yupi.tangpicture.infrastructure.mapper")
+@MapperScan("com.tang.tangpicture.infrastructure.mapper")
 @EnableAspectJAutoProxy(exposeProxy = true)
 public class TangPictureBackenApplication {
 

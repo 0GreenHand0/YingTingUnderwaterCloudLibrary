@@ -1,4 +1,4 @@
-package com.yupi.tangpicturebacken;
+package com.tang.tangpicturebacken;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -34,4 +34,4 @@ build/
 
 ### VS Code ###
 .vscode/
-/src/main/java/com/yupi/tangpicture/infrastructure/mapper/SpaceMapper.java
+/src/main/java/com/tang/tangpicture/infrastructure/mapper/SpaceMapper.java
